@@ -5,11 +5,11 @@ import java.util.TimerTask;
 
 public class FraserHomeAutomation {
 
-    private int hour;
-    private int minute;
-    private int second;
+    private static int hour;
+    private static int minute;
+    private static int second;
 
-    public void main(String[] args) {
+    public static void main( final String[] args ) {
         Calendar timeOfDay = Calendar.getInstance();
         timeOfDay.set(Calendar.HOUR_OF_DAY, 11);
         timeOfDay.set(Calendar.MINUTE, 0);
@@ -22,7 +22,7 @@ public class FraserHomeAutomation {
         startTimer();
     }
 
-    private void startTimer() {
+    private static void startTimer() {
         new Timer("Porch Lights Control", true).schedule(new TimerTask() {
             @Override
             public void run() {
@@ -33,7 +33,7 @@ public class FraserHomeAutomation {
     }
 
 
-    private Date getNextRunTime() {
+    private static Date getNextRunTime() {
         Calendar startTime = Calendar.getInstance();
         Calendar now = Calendar.getInstance();
         startTime.set(Calendar.HOUR_OF_DAY, hour);

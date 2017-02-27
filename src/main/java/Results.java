@@ -104,7 +104,3 @@ public class Results {
     }
 
 }
-Use this tool offline:Maven plugin Gradle plugin Ant task CLI Java API
-        © 2012-2016Joe Littlejohn Bugs?
-
-
