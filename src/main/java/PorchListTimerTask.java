@@ -9,13 +9,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class PorchListTimerTask extends TimerTask {
+class PorchListTimerTask extends TimerTask {
 
-    public static final String IFTTT_KEY = "hZEOlVeS6uK5BjcSohNiI_GnxZvIMcqWHh7Sdz4efvO";
-    public static final DateFormat ISO8601DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
+    private static final String IFTTT_KEY = "hZEOlVeS6uK5BjcSohNiI_GnxZvIMcqWHh7Sdz4efvO";
+    private static final DateFormat ISO8601DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
 
-    private Timer turnPorchLightsOffTimer;
-    private Timer turnPorchLightsOnTimer;
     private Date oneHourAfterSunrise;
     private Date oneHourBeforeSunset;
 
@@ -53,7 +51,7 @@ public class PorchListTimerTask extends TimerTask {
         setCurrentState(oneHourAfterSunrise, oneHourBeforeSunset);
 
         System.out.println("Schedule Lights Off At: " + oneHourBeforeSunset);
-        turnPorchLightsOffTimer = new Timer("Turn Porch Lights Off", true);
+        Timer turnPorchLightsOffTimer = new Timer("Turn Porch Lights Off", true);
         turnPorchLightsOffTimer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -62,7 +60,7 @@ public class PorchListTimerTask extends TimerTask {
         }, oneHourBeforeSunset);
 
         System.out.println("Schedule Lights On At: " + oneHourAfterSunrise);
-        turnPorchLightsOnTimer = new Timer("Turn Porch Lights On", true);
+        Timer turnPorchLightsOnTimer = new Timer("Turn Porch Lights On", true);
         turnPorchLightsOnTimer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -106,23 +104,15 @@ public class PorchListTimerTask extends TimerTask {
         triggerIFTTTEvent("OutsideLightsOff");
     }
 
-    public SunriseSunsetDTO getSunriseSunsetTime() {
-        try {
-            String url = "http://api.sunrise-sunset.org/json?lat=41.9001&lng=-71.0898&formatted=0";
-            String response = makeGetRequest(url);
-            return new Gson().fromJson(response.toString(), SunriseSunsetDTO.class);
-        } catch (Exception e) {
-        }
-        return null;
+    private SunriseSunsetDTO getSunriseSunsetTime() {
+        String url = "http://api.sunrise-sunset.org/json?lat=41.9001&lng=-71.0898&formatted=0";
+        return new Gson().fromJson(makeGetRequest(url), SunriseSunsetDTO.class);
     }
 
     private void triggerIFTTTEvent(String event) {
         System.out.println("IFTTT Event: " + event);
-        try {
-            String url = "https://maker.ifttt.com/trigger/" + event + "/with/key/" + IFTTT_KEY;
-            makeGetRequest(url);
-        } catch (Exception e) {
-        }
+        String url = "https://maker.ifttt.com/trigger/" + event + "/with/key/" + IFTTT_KEY;
+        makeGetRequest(url);
     }
 
     private String makeGetRequest(String url) {
@@ -147,6 +137,7 @@ public class PorchListTimerTask extends TimerTask {
 
             return response.toString();
         } catch (Exception e) {
+            System.out.println("API request Error: " + url);
         }
         return "";
     }
