@@ -23,14 +23,22 @@ public class FraserHomeAutomation {
     }
 
     private static void startTimer() {
+
         Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                new PorchListTimerTask().run();
-                startTimer();
-            }
-        }, getNextRunTime());
+        timer.schedule(new PorchListTimerTask(),
+                0,
+                24*60*60*1000);
+
+
+
+//        Timer timer = new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                new PorchListTimerTask().run();
+//                startTimer();
+//            }
+//        }, getNextRunTime());
     }
 
 

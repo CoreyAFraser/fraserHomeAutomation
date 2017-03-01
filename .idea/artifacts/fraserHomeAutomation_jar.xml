@@ -1,10 +1,15 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="fraserHomeAutomation:jar">
+  <artifact build-on-make="true" name="fraserHomeAutomation:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/fraserHomeAutomation_jar</output-path>
-    <root id="archive" name="fraserHomeAutomation.jar">
-      <element id="module-output" name="fraserHomeAutomation" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar" path-in-jar="/" />
+    <root id="root">
+      <element id="archive" name="fraserHomeAutomation.jar">
+        <element id="module-output" name="fraserHomeAutomation" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.7" />
+      <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.0" />
     </root>
   </artifact>
 </component>

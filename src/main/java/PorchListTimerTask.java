@@ -1,6 +1,4 @@
 import com.google.gson.Gson;
-import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.ISODateTimeFormat;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -14,42 +12,48 @@ import java.util.*;
 public class PorchListTimerTask extends TimerTask {
 
     public static final String IFTTT_KEY = "hZEOlVeS6uK5BjcSohNiI_GnxZvIMcqWHh7Sdz4efvO";
+    public static final DateFormat ISO8601DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
 
     private Timer turnPorchLightsOffTimer;
     private Timer turnPorchLightsOnTimer;
+    private Date oneHourAfterSunrise;
+    private Date oneHourBeforeSunset;
 
     public void run() {
         System.out.println();
         System.out.println();
-        SunriseSunsetDTO sunriseSunsetResults = getSunsetTime();
+        SunriseSunsetDTO sunriseSunsetResults = getSunriseSunsetTime();
+
         System.out.println("Sunset: " + sunriseSunsetResults.getResults().getSunset());
-        DateFormat df1 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
+        System.out.println("Sunrise: " + sunriseSunsetResults.getResults().getSunrise());
 
         Date sunset = null;
         try {
-            sunset = df1.parse(sunriseSunsetResults.getResults().getSunset());
+            sunset = ISO8601DATE_FORMAT.parse(sunriseSunsetResults.getResults().getSunset());
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        Date sunrise = null;
+        try {
+            sunrise = ISO8601DATE_FORMAT.parse(sunriseSunsetResults.getResults().getSunrise());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
         Calendar cal = Calendar.getInstance();
         cal.setTime(sunset);
         cal.add(Calendar.HOUR, -1);
-        Date oneHourBeforeSunset = cal.getTime();
+        oneHourBeforeSunset = cal.getTime();
 
-        System.out.println("Sunrise: " + sunriseSunsetResults.getResults().getSunrise());
-        Date sunrise = null;
-        try {
-            sunrise = df1.parse(sunriseSunsetResults.getResults().getSunrise());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
         cal.setTime(sunrise);
         cal.add(Calendar.HOUR, 1);
-        cal.add(Calendar.DATE, 1);
-        Date oneHourAfterSunrise = cal.getTime();
+        oneHourAfterSunrise = cal.getTime();
 
-        System.out.println("Lights On At: " + oneHourBeforeSunset);
-        turnPorchLightsOffTimer = new Timer("Turn Porch Lights On", true);
+        setCurrentState(oneHourAfterSunrise, oneHourBeforeSunset);
+
+        System.out.println("Schedule Lights Off At: " + oneHourBeforeSunset);
+        turnPorchLightsOffTimer = new Timer("Turn Porch Lights Off", true);
         turnPorchLightsOffTimer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -57,7 +61,7 @@ public class PorchListTimerTask extends TimerTask {
             }
         }, oneHourBeforeSunset);
 
-        System.out.println("Lights Off At: " + oneHourAfterSunrise);
+        System.out.println("Schedule Lights On At: " + oneHourAfterSunrise);
         turnPorchLightsOnTimer = new Timer("Turn Porch Lights On", true);
         turnPorchLightsOnTimer.schedule(new TimerTask() {
             @Override
@@ -67,19 +71,42 @@ public class PorchListTimerTask extends TimerTask {
         }, oneHourAfterSunrise);
     }
 
+    private void setCurrentState(Date oneHourAfterSunrise, Date oneHourBeforeSunset) {
+        Calendar now = Calendar.getInstance();
+        Calendar sunriseCalendar = Calendar.getInstance();
+        sunriseCalendar.setTime(oneHourAfterSunrise);
+        Calendar sunsetCalendar = Calendar.getInstance();
+        sunsetCalendar.setTime(oneHourBeforeSunset);
+
+        if ((now.equals(sunriseCalendar) || now.after(sunriseCalendar)) && (now.equals(sunsetCalendar) || now.before(sunsetCalendar))) {
+            turnPorchLightsOff();
+            sunriseCalendar.add(Calendar.DATE, 1);
+            this.oneHourAfterSunrise = sunriseCalendar.getTime();
+        } else {
+            turnPorchLightsOn();
+            if (now.after(sunsetCalendar)) {
+                sunriseCalendar.add(Calendar.DATE, 1);
+                this.oneHourAfterSunrise = sunriseCalendar.getTime();
+
+                sunsetCalendar.add(Calendar.DATE, 1);
+                this.oneHourBeforeSunset = sunsetCalendar.getTime();
+            }
+        }
+    }
+
     private void turnPorchLightsOn() {
+        Calendar now = Calendar.getInstance();
+        System.out.println("Lights On At: " + now.getTime());
         triggerIFTTTEvent("OutsideLightsOn");
-        turnPorchLightsOnTimer.cancel();
-        turnPorchLightsOnTimer = null;
     }
 
     private void turnPorchLightsOff() {
+        Calendar now = Calendar.getInstance();
+        System.out.println("Lights Off At: " + now.getTime());
         triggerIFTTTEvent("OutsideLightsOff");
-        turnPorchLightsOffTimer.cancel();
-        turnPorchLightsOffTimer = null;
     }
 
-    public SunriseSunsetDTO getSunsetTime() {
+    public SunriseSunsetDTO getSunriseSunsetTime() {
         try {
             String url = "http://api.sunrise-sunset.org/json?lat=41.9001&lng=-71.0898&formatted=0";
             String response = makeGetRequest(url);
@@ -123,5 +150,4 @@ public class PorchListTimerTask extends TimerTask {
         }
         return "";
     }
-
 }

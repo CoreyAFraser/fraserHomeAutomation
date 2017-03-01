@@ -8,6 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="93ac76ba-d4fa-430d-9a71-ebd72d882f38" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/fraserHomeAutomation_jar/fraserHomeAutomation.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/FraserHomeAutomation$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/fraserHomeAutomation_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/fraserHomeAutomation_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FraserHomeAutomation.java" afterPath="$PROJECT_DIR$/src/main/java/FraserHomeAutomation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PorchListTimerTask.java" afterPath="$PROJECT_DIR$/src/main/java/PorchListTimerTask.java" />
     </list>
@@ -34,8 +38,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="765">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -44,8 +48,8 @@
       <file leaf-file-name="FraserHomeAutomation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FraserHomeAutomation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="529">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,33 +60,14 @@
       <file leaf-file-name="PorchListTimerTask.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PorchListTimerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="285">
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateTimeFormatter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar!/org/joda/time/format/DateTimeFormatter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Timer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="206" column="16" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
-              <folding>
-                <element signature="e#7783#7784#0" expanded="true" />
-                <element signature="e#7829#7830#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+                <element signature="e#2106#2107#0" expanded="true" />
+                <element signature="e#2403#2404#0" expanded="true" />
+                <element signature="e#2454#2455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +88,42 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1207">
               <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="e#879#880#0" expanded="false" />
+                <element signature="e#909#910#0" expanded="false" />
+                <element signature="e#955#956#0" expanded="false" />
+                <element signature="e#993#994#0" expanded="false" />
+                <element signature="e#1026#1027#0" expanded="false" />
+                <element signature="e#1055#1056#0" expanded="false" />
+                <element signature="e#1099#1100#0" expanded="false" />
+                <element signature="e#1135#1136#0" expanded="false" />
+                <element signature="e#1171#1172#0" expanded="false" />
+                <element signature="e#1203#1204#0" expanded="false" />
+                <element signature="e#1253#1254#0" expanded="false" />
+                <element signature="e#1295#1296#0" expanded="false" />
+                <element signature="e#1332#1333#0" expanded="false" />
+                <element signature="e#1364#1365#0" expanded="false" />
+                <element signature="e#1415#1416#0" expanded="false" />
+                <element signature="e#1457#1458#0" expanded="false" />
+                <element signature="e#1502#1503#0" expanded="false" />
+                <element signature="e#1543#1544#0" expanded="false" />
+                <element signature="e#1611#1612#0" expanded="false" />
+                <element signature="e#1671#1672#0" expanded="false" />
+                <element signature="e#1714#1715#0" expanded="false" />
+                <element signature="e#1753#1754#0" expanded="false" />
+                <element signature="e#1817#1818#0" expanded="false" />
+                <element signature="e#1873#1874#0" expanded="false" />
+                <element signature="e#1921#1922#0" expanded="false" />
+                <element signature="e#1965#1966#0" expanded="false" />
+                <element signature="e#2151#2152#0" expanded="false" />
+                <element signature="e#2193#2194#0" expanded="false" />
+                <element signature="e#2263#2264#0" expanded="false" />
+                <element signature="e#2325#2326#0" expanded="false" />
+                <element signature="e#2377#2378#0" expanded="false" />
+                <element signature="e#2425#2426#0" expanded="false" />
+                <element signature="e#2631#2632#0" expanded="false" />
+                <element signature="e#2677#2678#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +169,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -177,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,15 +275,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fraserHomeAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fraserHomeAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fraserHomeAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fraserHomeAutomation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dailyMagicPriceScraper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.11621094" />
     <property name="project.structure.side.proportion" value="0.25856355" />
@@ -389,8 +449,8 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -398,19 +458,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2886266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2867804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -426,10 +486,147 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PorchListTimerTask.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="now.equals(sunriseCalendar) || now.after(sunriseCalendar)" />
+        <watch expression="now.equals(sunsetCalendar)" />
+        <watch expression="now.before(sunsetCalendar)" />
+        <watch expression="now.after(sunsetCalendar)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FraserHomeAutomation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PorchListTimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar!/org/joda/time/format/DateTimeFormatter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5712">
+          <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="206" column="16" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#29484#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4151#4396#0" expanded="false" />
+            <element signature="e#4395#4396#0" expanded="false" />
+            <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4798#4799#0" expanded="false" />
+            <element signature="e#4845#4846#0" expanded="false" />
+            <element signature="e#5359#5360#0" expanded="false" />
+            <element signature="e#5416#5417#0" expanded="false" />
+            <element signature="e#21994#21995#0" expanded="false" />
+            <element signature="e#22028#22029#0" expanded="false" />
+            <element signature="e#25546#25547#0" expanded="false" />
+            <element signature="e#25573#25574#0" expanded="false" />
+            <element signature="e#26029#26030#0" expanded="false" />
+            <element signature="e#26060#26061#0" expanded="false" />
+            <element signature="e#26283#26284#0" expanded="false" />
+            <element signature="e#26314#26315#0" expanded="false" />
+            <element signature="e#27254#27255#0" expanded="false" />
+            <element signature="e#27284#27285#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SunriseSunsetDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Results.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1135#1136#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#1253#1254#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#1502#1503#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1611#1612#0" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+            <element signature="e#1921#1922#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2193#2194#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2325#2326#0" expanded="false" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2425#2426#0" expanded="false" />
+            <element signature="e#2631#2632#0" expanded="false" />
+            <element signature="e#2677#2678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -454,6 +651,10 @@
           <caret line="15" column="87" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,23 +671,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="1873" column="16" selection-start-line="1873" selection-start-column="16" selection-end-line="1873" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SunriseSunsetDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1135#1136#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#1253#1254#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#1502#1503#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1611#1612#0" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+            <element signature="e#1921#1922#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2193#2194#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2325#2326#0" expanded="false" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2425#2426#0" expanded="false" />
+            <element signature="e#2631#2632#0" expanded="false" />
+            <element signature="e#2677#2678#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,25 +732,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="206" column="16" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
           <folding>
-            <element signature="e#7783#7784#0" expanded="true" />
-            <element signature="e#7829#7830#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1135#1136#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#1253#1254#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#1502#1503#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1611#1612#0" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+            <element signature="e#1921#1922#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2151#2152#0" expanded="false" />
+            <element signature="e#2193#2194#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2325#2326#0" expanded="false" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2425#2426#0" expanded="false" />
+            <element signature="e#2631#2632#0" expanded="false" />
+            <element signature="e#2677#2678#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,25 +775,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="583" column="41" selection-start-line="583" selection-start-column="41" selection-end-line="583" selection-end-column="41" />
-          <folding>
-            <element signature="e#10566#10567#0" expanded="true" />
-            <element signature="e#10619#10620#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar!/org/joda/time/format/DateTimeFormatter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="5712">
           <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="1753" column="22" selection-start-line="1753" selection-start-column="22" selection-end-line="1753" selection-end-column="22" />
+          <folding>
+            <element signature="e#70577#70578#0" expanded="false" />
+            <element signature="e#70627#70628#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="172" column="11" selection-start-line="172" selection-start-column="11" selection-end-line="172" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SunriseSunsetDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FraserHomeAutomation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="529">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -566,10 +841,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PorchListTimerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,7 +887,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25856355" />
               </list>
             </option>
           </splitter-proportions>
@@ -645,7 +924,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25856355" />
               </list>
             </option>
           </splitter-proportions>
