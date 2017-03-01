@@ -23,7 +23,8 @@ public class FraserHomeAutomation {
     }
 
     private static void startTimer() {
-        new Timer("Porch Lights Control", true).schedule(new TimerTask() {
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
             @Override
             public void run() {
                 new PorchListTimerTask().run();
@@ -45,6 +46,8 @@ public class FraserHomeAutomation {
             startTime.add(Calendar.DATE, 1);
         }
 
-        return startTime.getTime();
+        Date startDate = startTime.getTime();
+        System.out.println("Start Date: " + startDate);
+        return startDate;
     }
 }

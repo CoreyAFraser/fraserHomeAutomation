@@ -6,10 +6,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class PorchListTimerTask extends TimerTask {
 
@@ -19,21 +19,36 @@ public class PorchListTimerTask extends TimerTask {
     private Timer turnPorchLightsOnTimer;
 
     public void run() {
+        System.out.println();
+        System.out.println();
         SunriseSunsetDTO sunriseSunsetResults = getSunsetTime();
+        System.out.println("Sunset: " + sunriseSunsetResults.getResults().getSunset());
+        DateFormat df1 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
 
-        DateTimeFormatter fmt = ISODateTimeFormat.dateTime();
-        Date sunset = fmt.parseDateTime(sunriseSunsetResults.getResults().getSunset()).toDate();
+        Date sunset = null;
+        try {
+            sunset = df1.parse(sunriseSunsetResults.getResults().getSunset());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         Calendar cal = Calendar.getInstance();
         cal.setTime(sunset);
         cal.add(Calendar.HOUR, -1);
         Date oneHourBeforeSunset = cal.getTime();
 
-        Date sunrise = fmt.parseDateTime(sunriseSunsetResults.getResults().getSunset()).toDate();
+        System.out.println("Sunrise: " + sunriseSunsetResults.getResults().getSunrise());
+        Date sunrise = null;
+        try {
+            sunrise = df1.parse(sunriseSunsetResults.getResults().getSunrise());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         cal.setTime(sunrise);
         cal.add(Calendar.HOUR, 1);
         cal.add(Calendar.DATE, 1);
         Date oneHourAfterSunrise = cal.getTime();
 
+        System.out.println("Lights On At: " + oneHourBeforeSunset);
         turnPorchLightsOffTimer = new Timer("Turn Porch Lights On", true);
         turnPorchLightsOffTimer.schedule(new TimerTask() {
             @Override
@@ -42,6 +57,7 @@ public class PorchListTimerTask extends TimerTask {
             }
         }, oneHourBeforeSunset);
 
+        System.out.println("Lights Off At: " + oneHourAfterSunrise);
         turnPorchLightsOnTimer = new Timer("Turn Porch Lights On", true);
         turnPorchLightsOnTimer.schedule(new TimerTask() {
             @Override
@@ -74,6 +90,7 @@ public class PorchListTimerTask extends TimerTask {
     }
 
     private void triggerIFTTTEvent(String event) {
+        System.out.println("IFTTT Event: " + event);
         try {
             String url = "https://maker.ifttt.com/trigger/" + event + "/with/key/" + IFTTT_KEY;
             makeGetRequest(url);
